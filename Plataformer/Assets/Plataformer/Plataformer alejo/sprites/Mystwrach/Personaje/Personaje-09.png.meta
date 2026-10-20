@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cf34b2514e05e0745aa5711e0b4aa28e
+guid: 8b23975b45ca7764db4d55bcf66e90ee
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1759694412393435288
-    second: Personaje-11_0
+      213: -2026315008932026023
+    second: Personaje-09_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,17 +109,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Personaje-11_0
+      name: Personaje-09_0
       rect:
         serializedVersion: 2
-        x: 43
+        x: 28
         y: 0
-        width: 203
-        height: 285
+        width: 206
+        height: 264
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89053fbaeb0bb6810800000000000000
-      internalID: 1759694412393435288
+      spriteID: 95960993c3511e3e0800000000000000
+      internalID: -2026315008932026023
       vertices: []
       indices: 
       edges: []
@@ -148,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Personaje-11_0: 1759694412393435288
+      Personaje-09_0: -2026315008932026023
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
