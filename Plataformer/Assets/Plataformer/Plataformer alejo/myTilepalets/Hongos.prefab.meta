@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Plataformer/Assets/Plataformer/Plataformer alejo/myTilepalets/Hongos.prefab.meta
 guid: 536e1e47bfa28bd4a9235526ab67737e
+========
+guid: e942b8ade0dcf3a41b120f9b6d6cdb93
+>>>>>>>> origin/Paul:Plataformer/Assets/Paul/TilePalet/Tiles/New Tile Palette.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
