@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Plataformer/Paul/Escena/borrador.unity
-    guid: 4488ccd8d7dcff64685240e1db41249a
+    path: Assets/Plataformer/Plataformer alejo/Scenes/Menu proto lv2.unity
+    guid: 9175d7013afb31646ae2ecb6fbd5b38e
   - enabled: 1
     path: Assets/Plataformer/Plataformer alejo/Scenes/Level 2.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Plataformer/Paul/Escena/Level 1.unity
-    guid: 879bba133090670498229d5fe4e170c5
+    path: Assets/Plataformer/Paul/Escena/hola.unity
+    guid: d7231965b0b01ee4482a21e90dc7e03a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
