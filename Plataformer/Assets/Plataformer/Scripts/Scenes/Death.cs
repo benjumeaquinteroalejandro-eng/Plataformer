@@ -8,8 +8,12 @@ public class Death : MonoBehaviour
     {
         if (colision.gameObject.tag == "Player")
         {
-            _playerStats.RestarVida(100);
-            _uiManager.RestarFillAmount(1F);
+             _playerStats.RestarVida(100);
+             _uiManager.RestarFillAmount(1F);
+        
+             _playerStats.sinprotector(100);
+             _uiManager.RestarPFillAmount(1F);
+        
             
         }
     }
