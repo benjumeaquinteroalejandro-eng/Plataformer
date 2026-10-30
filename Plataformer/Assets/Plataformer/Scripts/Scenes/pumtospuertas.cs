@@ -8,8 +8,9 @@ public class pumtospuertas : MonoBehaviour
     {
         if (colision.gameObject.tag == "Player")
         {
-                _playerStats.paraganar(10);
+            _playerStats.paraganar(10);
 
+            Destroy(this.gameObject);
         }
     }
 }

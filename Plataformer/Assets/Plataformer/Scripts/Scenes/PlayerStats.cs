@@ -35,7 +35,16 @@ public class PlayerStats : MonoBehaviour
     public void paraganar(int secret)
     { 
         puntos = puntos + secret;
-        _uiManager.actualizarpuntos(secret);
+        _uiManager.actualizarpuntos(puntos);
+
+        if (puntos >= 20)
+        {
+            _gameManager.Caminopuntos();
+        }
+        if (puntos >= 30)
+        {
+            _gameManager.Llavefinal();
+        }
     }
 
     private void Update()
