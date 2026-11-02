@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Image _barra;
     [SerializeField] private Image _barrap;
     [SerializeField] private TextMeshProUGUI _puntosga;
+    [SerializeField] private TextMeshProUGUI _temp;
 
 
     public void SumarFillAmount(float amount)
@@ -40,5 +41,9 @@ public class UIManager : MonoBehaviour
     public void actualizarpuntos(int puntosui)
     {
         _puntosga.text = Convert.ToString(puntosui);
+    }
+    public void actualizartime(int minutes, int sec)
+    {
+        _temp.text = string.Format("{0:00}:{1:00}", minutes, sec);
     }
 }

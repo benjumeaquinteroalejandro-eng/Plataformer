@@ -9,10 +9,13 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject _gameover;
     [SerializeField] private GameObject _win;
+    [SerializeField] private GameObject _winsecret;
     [SerializeField] private GameObject _puntoSecret;
     [SerializeField] private GameObject _llaveSalida;
     [SerializeField] private GameObject _llaveamarilla;
     [SerializeField] private GameObject _space;
+    [SerializeField] private GameObject _llaveazul;
+    [SerializeField] private GameObject _objsecret1;
 
 
     public void Start()
@@ -44,6 +47,10 @@ public class GameManager : MonoBehaviour
     {
         _win.SetActive(true);
     }
+    public void Winsectret()
+    {
+        _winsecret.SetActive(true);
+    }
     public void Caminopuntos()
     {
         _puntoSecret.SetActive(false);
@@ -59,5 +66,17 @@ public class GameManager : MonoBehaviour
     public void Textodereferenciapuerta()
     { 
         _space.SetActive(true);
+    }
+    public void Sintextopuerta()
+    {
+        _space.SetActive(false);
+    }
+    public void conLlaveazul()
+    {
+        _llaveazul.SetActive(true);
+    }
+    public void conobjsecret1()
+    {
+        _objsecret1.SetActive(true);
     }
 }
