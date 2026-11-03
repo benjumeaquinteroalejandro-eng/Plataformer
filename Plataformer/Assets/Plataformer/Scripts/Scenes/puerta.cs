@@ -24,7 +24,7 @@ public class puerta : MonoBehaviour
         {
             _gameManager.Textodereferenciapuerta();
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.S))
             {
                 if (_havesecret == false)
                 {

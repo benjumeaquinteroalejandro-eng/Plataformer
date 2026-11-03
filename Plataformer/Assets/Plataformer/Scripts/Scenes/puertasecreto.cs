@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class puertasecret1 : MonoBehaviour
+public class puertasecreto : MonoBehaviour
 {
     [SerializeField] private GameObject _puertasecret;
     [SerializeField] private GameManager _gameManager;
@@ -18,7 +18,7 @@ public class puertasecret1 : MonoBehaviour
         {
             _gameManager.Textodereferenciapuerta();
 
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.S))
             {
                 salida.transform.position = _secretoccordenadas;
             }

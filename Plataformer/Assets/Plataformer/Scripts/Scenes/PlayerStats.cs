@@ -8,6 +8,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private UIManager _uiManager;
     [SerializeField] private GameManager _gameManager;
     [SerializeField] private Animator _animator;
+    [SerializeField] private Puntosbanderas _puntosbanderas;
     public int puntosVida = 100;
     public int escudoP = 0;
     public int puntos = 0;
@@ -37,13 +38,22 @@ public class PlayerStats : MonoBehaviour
         puntos = puntos + secret;
         _uiManager.actualizarpuntos(puntos);
 
+        if (puntos >= 10)
+        {
+            _gameManager.AbrirCaminocerrado();
+        }
         if (puntos >= 20)
         {
             _gameManager.Caminopuntos();
         }
         if (puntos >= 30)
         {
+            _gameManager.Caminopuntos2();
             _gameManager.Llavefinal();
+        }
+        if (puntos >= 60)
+        {
+            _gameManager.ultimabandera();
         }
     }
 

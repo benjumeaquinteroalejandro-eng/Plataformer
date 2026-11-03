@@ -4,8 +4,8 @@ using UnityEngine;
 public class llavesecret1 : MonoBehaviour
 {
     [SerializeField] private GameManager _gamemanager;
-    [SerializeField] private puertasecret1 _conpuertas1;
-    [SerializeField] private puertasecret1 _conpuertasREVES;
+    [SerializeField] private puertasecreto _conpuertas1;
+    [SerializeField] private puertasecreto _conpuertasREVES;
     private void OnCollisionEnter2D(Collision2D colision)
     {
         if (colision.gameObject.tag == "Player")

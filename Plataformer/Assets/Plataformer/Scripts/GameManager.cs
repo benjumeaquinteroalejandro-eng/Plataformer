@@ -11,13 +11,19 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _win;
     [SerializeField] private GameObject _winsecret;
     [SerializeField] private GameObject _puntoSecret;
+    [SerializeField] private GameObject _puntoCerrado;
+    [SerializeField] private GameObject _puntoSecret2;
     [SerializeField] private GameObject _llaveSalida;
     [SerializeField] private GameObject _llaveamarilla;
     [SerializeField] private GameObject _space;
     [SerializeField] private GameObject _llaveazul;
     [SerializeField] private GameObject _objsecret1;
-
-
+    [SerializeField] private GameObject _finalbanderas;
+    [SerializeField] private GameObject _llavenaranja;
+    [SerializeField] private GameObject _banderaamarilla;
+    [SerializeField] private GameObject _labandera;
+    [SerializeField] private GameObject _banderaapagada;
+    [SerializeField] private GameObject _banderaspuntos;
     public void Start()
     {
         Time.timeScale = 1;
@@ -55,6 +61,14 @@ public class GameManager : MonoBehaviour
     {
         _puntoSecret.SetActive(false);
     }
+    public void AbrirCaminocerrado()
+    {
+        _puntoCerrado.SetActive(false);
+    }
+    public void Caminopuntos2()
+    {
+        _puntoSecret2.SetActive(false);
+    }
     public void Llavefinal()
     {
         _llaveSalida.SetActive(true);
@@ -71,12 +85,37 @@ public class GameManager : MonoBehaviour
     {
         _space.SetActive(false);
     }
+    public void activarbasicasbanderas()
+    {
+        _banderaspuntos.gameObject.SetActive(true);
+
+    }
     public void conLlaveazul()
     {
         _llaveazul.SetActive(true);
     }
+    public void conLlavenaranja()
+    {
+        _llavenaranja.SetActive(true);
+    }
+    public void conbanderapuerta()
+    {
+        _banderaamarilla.SetActive(true);
+    }
+    public void armarlabandera()
+    {
+        _labandera.SetActive(true);
+    }
+    public void Sinbanderaapagada()
+    {
+        _banderaapagada.SetActive(false);
+    }
     public void conobjsecret1()
     {
         _objsecret1.SetActive(true);
+    }
+    public void ultimabandera()
+    {
+        _finalbanderas.SetActive(true);
     }
 }
