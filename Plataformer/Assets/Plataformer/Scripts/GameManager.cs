@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _gameover;
     [SerializeField] private GameObject _win;
     [SerializeField] private GameObject _winsecret;
+    [SerializeField] private GameObject _winsecret2;
     [SerializeField] private GameObject _puntoSecret;
     [SerializeField] private GameObject _puntoCerrado;
     [SerializeField] private GameObject _puntoSecret2;
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _space;
     [SerializeField] private GameObject _llaveazul;
     [SerializeField] private GameObject _objsecret1;
+    [SerializeField] private GameObject _objsecret2;
     [SerializeField] private GameObject _finalbanderas;
     [SerializeField] private GameObject _llavenaranja;
     [SerializeField] private GameObject _banderaamarilla;
@@ -56,6 +58,10 @@ public class GameManager : MonoBehaviour
     public void Winsectret()
     {
         _winsecret.SetActive(true);
+    }
+    public void Winsectret2()
+    {
+        _winsecret2.SetActive(true);
     }
     public void Caminopuntos()
     {
@@ -113,6 +119,10 @@ public class GameManager : MonoBehaviour
     public void conobjsecret1()
     {
         _objsecret1.SetActive(true);
+    }
+    public void conobjsecret2()
+    {
+        _objsecret2.SetActive(true);
     }
     public void ultimabandera()
     {

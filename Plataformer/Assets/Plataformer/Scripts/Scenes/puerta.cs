@@ -6,6 +6,7 @@ public class puerta : MonoBehaviour
     [SerializeField] private GameManager _gameManager;
     [SerializeField] private bool _isOpen = false;
     [SerializeField] private bool _havesecret = false;
+    [SerializeField] private bool _havesecret2 = false;
 
     public void Llaveenmano()
     {
@@ -17,6 +18,10 @@ public class puerta : MonoBehaviour
     {
         _havesecret = true;
     }
+    public void objetosecreto2()
+    {
+        _havesecret2 = true;
+    }
 
     private void OnTriggerStay2D(Collider2D salida)
     {
@@ -26,7 +31,7 @@ public class puerta : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.S))
             {
-                if (_havesecret == false)
+                if (_havesecret == false && _havesecret2 == false)
                 {
                     _gameManager.Win();
                     _gameManager.PauseGame();
@@ -34,6 +39,11 @@ public class puerta : MonoBehaviour
                 else if (_havesecret == true)
                 {
                     _gameManager.Winsectret();
+                    _gameManager.PauseGame();
+                }
+                if (_havesecret2 == true)
+                {
+                    _gameManager.Winsectret2();
                     _gameManager.PauseGame();
                 }
             }
