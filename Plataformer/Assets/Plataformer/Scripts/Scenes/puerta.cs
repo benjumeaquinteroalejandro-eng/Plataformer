@@ -41,7 +41,7 @@ public class puerta : MonoBehaviour
                     _gameManager.Winsectret();
                     _gameManager.PauseGame();
                 }
-                if (_havesecret2 == true)
+                else if (_havesecret2 == true)
                 {
                     _gameManager.Winsectret2();
                     _gameManager.PauseGame();

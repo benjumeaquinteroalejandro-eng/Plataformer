@@ -11,7 +11,7 @@ public class Puertabanderas : MonoBehaviour
         {
             _gamemanager.Textodereferenciapuerta();
 
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.S))
             {
                 _conpuertas2.Llaveenmanosecret2();
                 _conpuertasREVES2.Llaveenmanosecret2();
